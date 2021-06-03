@@ -19,7 +19,7 @@ authController.register = async (req, res, next) => {
         lastName: req.body.LASTNAME,
         email: req.body.EMAIL,
         password: req.body.PASSWORD,
-        typeUserId: 2
+        typeUserId: req.body.TYPEUSERID || 2
     };
 
     if (data.password != null && data.password != '') {

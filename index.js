@@ -23,10 +23,8 @@ const socketIo= require('socket.io')(server,{
   }
 });
 
-// const myMessages = []
 socketIo.of('/api/v1/storeMessage').on('connection',function(socket){
   socket.on('send-message',function(data){
-    // myMessages.push(data)
     socket.emit('text-event',[data])
     socket.broadcast.emit('text-event',[data])
   })
