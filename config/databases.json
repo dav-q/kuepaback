@@ -1,0 +1,14 @@
+{
+  "development":{
+    "databases": {
+      "test": {
+        "username": "root",
+        "password": "",
+        "database": "kuepa",
+        "host": "localhost",
+        "dialect": "mysql",
+        "timezone": "-05:00"
+      }     
+    }
+  }
+}
